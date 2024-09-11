@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Transport Hub</title>
+    <link rel="stylesheet" href="career.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Transport Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="career.html">Careers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="career-section">
+        <div class="container">
+            <h2>Join Our Team</h2>
+            <div class="job-listings">
+                <div class="job">
+                    <h3>Transport Coordinator</h3>
+                    <p><strong>Location:</strong> City, Country</p>
+                    <p><strong>Experience:</strong> 2+ years</p>
+                    <p><strong>Description:</strong> Responsible for coordinating transport schedules and ensuring timely delivery of goods.</p>
+                    <a href="#apply-form" class="apply-button">Apply Now</a>
+                </div>
+                <div class="job">
+                    <h3>Driver</h3>
+                    <p><strong>Location:</strong> City, Country</p>
+                    <p><strong>Experience:</strong> 1+ years</p>
+                    <p><strong>Description:</strong> Safely transport goods and passengers to their destinations.</p>
+                    <a href="#apply-form" class="apply-button">Apply Now</a>
+                </div>
+                <!-- Add more job listings here -->
+            </div>
+
+            <div id="apply-form" class="application-form">
+                <h3>Apply for a Position</h3>
+                <form id="career-form">
+                    <label for="applicant-name">Name</label>
+                    <input type="text" id="applicant-name" name="applicant-name" required>
+
+                    <label for="applicant-email">Email</label>
+                    <input type="email" id="applicant-email" name="applicant-email" required>
+
+                    <label for="applicant-phone">Phone</label>
+                    <input type="tel" id="applicant-phone" name="applicant-phone" required>
+
+                    <label for="resume">Resume (PDF)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+                    <label for="cover-letter">Cover Letter</label>
+                    <textarea id="cover-letter" name="cover-letter" rows="5" required></textarea>
+
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Transport Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="career.js"></script>
+</body>
+</html>

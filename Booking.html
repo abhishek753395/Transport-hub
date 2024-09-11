@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Transport Hub</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Transport Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-form">
+        <div class="container">
+            <h2>Book Your Vehicle</h2>
+            <form action="/submit-booking" method="POST">
+                <label for="vehicle-type">Vehicle Type</label>
+                <select id="vehicle-type" name="vehicle-type" required>
+                    <option value="" disabled selected>Select a vehicle</option>
+                    <option value="bus">Bus</option>
+                    <option value="truck">Truck</option>
+                    <option value="taxi">Taxi</option>
+                    <option value="crane">Crane</option>
+                    <option value="forklift">Forklift</option>
+                </select>
+
+                <label for="purpose">Purpose</label>
+                <select id="purpose" name="purpose" required>
+                    <option value="" disabled selected>Select purpose</option>
+                    <option value="travel">Travel</option>
+                    <option value="company">Company Work</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="details">Additional Details</label>
+                <textarea id="details" name="details" rows="4" placeholder="Enter any additional details or requirements here..."></textarea>
+
+                <button type="submit" class="submit-button">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Transport Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
